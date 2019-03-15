@@ -5,9 +5,8 @@ const line = require('@line/bot-sdk');
 const PORT = process.env.PORT || 3000;
 
 const config = {
-    channelSecret: 'd828856979432333aeebe81cd0fd85a4',
-    channelAccessToken: 'g3tCQHG2/pWnBOi1pbLU0M8r6Nc0mrpT8d8gZzlvGhMNuE4DuTU3pM+mJk6TRJl+SIud77qdu23kfajjvSNWzadU/Xe1K2mbeHFRxLQ9HMFprI9gtl3e2AUmfsCz0sNsVdFnADN0jzXF0J1BP+oQpAdB04t89/1O/w1cDnyilFU='};
-
+    channelSecret: '18d7efb3d6e815a05b95b8c11bd8d5e6',
+    channelAccessToken: '9Qcvg2xNr5xl2RSmJUCQJVNxIy4GrsoDHpvyTBI3hXVdjybGZ8YCDNQirYipvIg6Z6esZNcHK/8jSMAZ0Z7V7LkrIWLMhBko92+FM6qIAwub8rgc5zU7kIA3Q4AbplzdF577Acr7LTRyoxB2b0cyOgdB04t89/1O/w1cDnyilFU='}
 const app = express();
 
 app.post('/webhook', line.middleware(config), (req, res) => {
